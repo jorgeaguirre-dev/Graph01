@@ -1,0 +1,9 @@
+graphene-django>=3.0
+boto3==1.34.0
+# confirmadamente compatible con graphene 3.3
+graphene==3.3
+fastapi==0.109.0
+uvicorn==0.27.0
+mangum==0.17.0
+# Agregamos esta para el servidor de interfaz
+ariadne==0.23.0
