@@ -3,9 +3,9 @@
 [![AWS](https://img.shields.io/badge/AWS-DynamoDB-orange.svg)](https://aws.amazon.com/dynamodb/)
 
 # GraphQL Python MVP (Graphene + AWS)
-Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integración de GraphQL con Python en un entorno Serverless de AWS. El objetivo principal es practicar la implementación de esquemas "Code-First" integrando las tecnologias de referencia y realizar el despliegue de infraestructura como código (IaC).
+This is a Minimal Viable Product (MVP) project developed to demonstrate integrating GraphQL with Python in an AWS Serverless environment. The main goal is to practice implementing "Code-First" schemas using reference technologies and to deploy infrastructure as code (IaC).
 
-## 🏗️ Arquitectura del Proyecto
+## 🏗️ Project Architecture
 ```mermaid
     graph TD;
         A[Client / Notebook] -- HTTP POST --> B[AWS Lambda Function URL];
@@ -17,26 +17,25 @@ Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integrac
         F[Uvicorn] --> D;
     end;
 ```
-## 🚀 Características Principales
-- GraphQL Engine: Implementado con Graphene siguiendo un enfoque Code-First.
+## 🚀 Key Features
+- GraphQL Engine: Implemented with Graphene following a Code-First approach.
 
-- Web Framework: FastAPI para una ejecución asíncrona y eficiente.
+- Web Framework: FastAPI for efficient asynchronous execution.
 
-- Infraestructura: Desplegada totalmente con Terraform.
+- Infrastructure: Fully deployed using Terraform.
 
-- Cloud Native: Ejecución en AWS Lambda con persistencia en DynamoDB.
+- Cloud Native: Runs on AWS Lambda with persistence in DynamoDB.
 
-- Dual Mode: Soporte para ejecución local en Linux (Mocking) y despliegue real en la nube.
+- Dual Mode: Supports local execution on Linux (mocking) and real cloud deployment.
 
-## 🛠️ Tecnologías Utilizadas
-- Componente Tecnología Lenguaje:
-Python 3.11 + API Graphene, FastAPI, Ariadne (ASGI) 
-- Infraestructura: TerraformAWS
+## 🛠️ Technologies Used
+- Language / Core: Python 3.11 + Graphene API, FastAPI, Ariadne (ASGI)
+- Infrastructure: Terraform (AWS)
 - Services: Lambda, DynamoDB, IAM
-- Herramientas: Boto3, Mangum, Uvicorn
+- Tools: Boto3, Mangum, Uvicorn
 
-## 📦 Instalación y Ejecución Local
-Clonar y configurar entorno:
+## 📦 Local Installation & Run
+Clone and configure the environment:
 ```bash
 git clone <tu-repo-url>
 python3 -m venv venv
@@ -44,16 +43,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Correr servidor de desarrollo:
+Run the development server:
 ```bash
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
-Acceder desde el navegador a http://localhost:8000 para abrir el GraphQL Playground.
+Open http://localhost:8000 in your browser to access the GraphQL Playground.
 
-## ☁️ Despliegue en AWS
-Para desplegar este proyecto en tu propia cuenta de AWS:
+## ☁️ Deployment to AWS
+To deploy this project to your own AWS account:
 
-### Preparar el paquete:
+### Prepare the package:
 ```bash
 pip install --target ./package -r requirements.txt
 cd package && zip -r ../function.zip . && cd ..
@@ -66,16 +65,16 @@ terraform init
 terraform apply
 ```
 
-## 📈 Próximos Pasos (Evolución)
-Este proyecto es una base que planeo escalar con las siguientes funcionalidades:
+## 📈 Next Steps (Roadmap)
+This project is a foundation I plan to extend with the following features:
 
-[ ] Implementación de Relaciones (User -> Items).
+- [ ] Implement relationships (User -> Items).
 
-[ ] Agregar Autenticación vía AWS Cognito o JWT.
+- [ ] Add authentication via AWS Cognito or JWT.
 
-[ ] Configuración de CI/CD con GitHub Actions para despliegue automático.
+- [ ] Configure CI/CD with GitHub Actions for automated deployments.
 
-[ ] Manejo avanzado de errores y validaciones personalizadas en Graphene.
+- [ ] Advanced error handling and custom validations in Graphene.
 
 
 
