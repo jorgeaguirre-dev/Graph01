@@ -1,3 +1,7 @@
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
+[![Graphene](https://img.shields.io/badge/graphene-3.0+-green.svg)](https://graphene-python.org/)
+[![AWS](https://img.shields.io/badge/AWS-DynamoDB-orange.svg)](https://aws.amazon.com/dynamodb/)
+
 # GraphQL Python MVP (Graphene + AWS)
 Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integración de GraphQL con Python en un entorno Serverless de AWS. El objetivo principal es practicar la implementación de esquemas "Code-First" integrando las tecnologias de referencia y realizar el despliegue de infraestructura como código (IaC).
 
