@@ -1,5 +1,5 @@
 # GraphQL Python MVP (Graphene + AWS)
-Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integración de GraphQL con Python en un entorno Serverless de AWS. El objetivo principal es practicar la implementación de esquemas "Code-First" y el despliegue de infraestructura como código.
+Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integración de GraphQL con Python en un entorno Serverless de AWS. El objetivo principal es practicar la implementación de esquemas "Code-First" integrando las tecnologias de referencia y realizar el despliegue de infraestructura como código (IaC).
 
 ## 🏗️ Arquitectura del Proyecto
 ```mermaid
@@ -25,9 +25,11 @@ Este es un proyecto Mínimo Viable (MVP) desarrollado para demostrar la integrac
 - Dual Mode: Soporte para ejecución local en Linux (Mocking) y despliegue real en la nube.
 
 ## 🛠️ Tecnologías Utilizadas
-Componente Tecnología Lenguaje
-Python 3.11
-+APIGraphene, FastAPI, Ariadne (ASGI)InfraestructuraTerraformAWS ServicesLambda, DynamoDB, IAMHerramientasBoto3, Mangum, Uvicorn
+- Componente Tecnología Lenguaje:
+Python 3.11 + API Graphene, FastAPI, Ariadne (ASGI) 
+- Infraestructura: TerraformAWS
+- Services: Lambda, DynamoDB, IAM
+- Herramientas: Boto3, Mangum, Uvicorn
 
 ## 📦 Instalación y Ejecución Local
 Clonar y configurar entorno:
