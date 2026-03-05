@@ -8,3 +8,4 @@ venv/
 *.zip
 *.backup
 *.pyc
+terraform.tfstate
